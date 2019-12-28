@@ -1,7 +1,8 @@
-from flask import Blueprint
+from app.libs.subprint import Subprint
 
-user = Blueprint('user',__name__)
+api = Subprint('user')
 
-@user.route('/v1/user/get')
+@api.route('/get')
 def get_user():
     return 'get user'
+

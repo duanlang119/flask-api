@@ -1,5 +1,5 @@
 
-class Redprint:
+class Subprint:
     def __init__(self,name):
         self.name = name
         self.mound = []

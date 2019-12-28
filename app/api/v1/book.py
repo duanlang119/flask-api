@@ -1,7 +1,11 @@
-from flask import Blueprint
+from app.libs.subprint import Subprint
 
-book = Blueprint('book',__name__)
+api = Subprint('book')
 
-@book.route('/v1/book/get')
+@api.route('/get')
 def get_book():
     return 'get book'
+
+@api.route('/create')
+def create_book():
+    return 'create book111'
